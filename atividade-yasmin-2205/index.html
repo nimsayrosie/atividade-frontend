@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YasminEducação — Cursos</title>
   <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
 
-  
+
   <header>
     <div class="header-inner">
       <div class="logo">YasminEducação</div>
@@ -23,7 +25,7 @@
     </div>
   </header>
 
-  
+
   <main>
     <div class="hero">
       <h1 class="title-yasmin">YasminEducação</h1>
@@ -31,14 +33,20 @@
 
     <div id="mensagem-global" class="mensagem-global oculto"></div>
 
-    
+    <section class="secao-pesquisa">
+      <input type="text" id="search-input" placeholder="Pesquisar cursos...">
+      <select id="category-filter-selector">
+        <option value="">Todas as Categorias</option>
+      </select>
+    </section>
+
     <section class="secao-cursos">
       <h2 class="titulo-secao">Cursos disponíveis</h2>
-     
+
       <div class="grade">
         <article class="card">
-          <div class="card-topo";">
-        
+          <div class="card-topo" ;">
+
           </div>
           <div class="card-corpo">
             <img src="\images.png" alt="Descrição da imagem para acessibilidade" width="500" height="300">
@@ -47,24 +55,27 @@
             <p class="card-avaliacao">★★★★★ 4.9 (3.210)</p>
             <p class="card-carga">80 horas</p>
             <p class="card-preco" id="preco-1">R$ 199,90</p>
-            <button class="btn-carrinho" id="btn-1" onclick="adicionarCarrinho('btn-1', 'Java — Curso da Oracle', 'R$ 199,90')">
+            <button class="btn-carrinho" id="btn-1"
+              onclick="adicionarCarrinho('btn-1', 'Java — Curso da Oracle', 'R$ 199,90')">
               Adicionar ao Carrinho
             </button>
           </div>
         </article>
 
-        
+
         <article class="card">
           <div class="card-topo" style="background: linear-gradient(135deg, #f39c12, #f1c40f);">
           </div>
           <div class="card-corpo">
-            <img src="\Teoria-da-Relatividade.jpg" alt="Descrição da imagem para acessibilidade" width="500" height="300">
+            <img src="\Teoria-da-Relatividade.jpg" alt="Descrição da imagem para acessibilidade" width="500"
+              height="300">
             <h3 class="card-titulo">Teoria da Relatividade com JavaScript</h3>
             <p class="card-instrutor">Prof. Flavia Martins</p>
             <p class="card-avaliacao">★★★★☆ 4.7 (1.540)</p>
             <p class="card-carga">60 horas</p>
             <p class="card-preco" id="preco-2">R$ 149,90</p>
-            <button class="btn-carrinho" id="btn-2" onclick="adicionarCarrinho('btn-2', 'Teoria da Relatividade com JavaScript', 'R$ 149,90')">
+            <button class="btn-carrinho" id="btn-2"
+              onclick="adicionarCarrinho('btn-2', 'Teoria da Relatividade com JavaScript', 'R$ 149,90')">
               Adicionar ao Carrinho
             </button>
           </div>
@@ -73,7 +84,7 @@
       </div>
     </section>
 
-   
+
     <section class="carrinho-section">
       <h2>🛒 Meu Carrinho</h2>
 
@@ -82,21 +93,17 @@
       </p>
 
       <ul class="lista-carrinho" id="lista-carrinho">
-       
+
       </ul>
 
-      
+
       <div class="desconto-area" id="desconto-area">
-        <input
-          type="text"
-          id="input-cupom"
-          placeholder="Tem um cupom? Digite aqui..."
-        />
+        <input type="text" id="input-cupom" placeholder="Tem um cupom? Digite aqui..." />
         <button onclick="aplicarDesconto()">Aplicar</button>
         <p class="msg-cupom" id="msg-cupom"></p>
       </div>
 
-      
+
       <div class="carrinho-total" id="carrinho-total">
         <p>Subtotal: <span id="subtotal-preco">R$ 0,00</span></p>
         <p class="linha-desconto" id="linha-desconto">
@@ -105,16 +112,17 @@
         <p class="linha-final">Total: <span id="total-preco">R$ 0,00</span></p>
       </div>
     </section>
-    
+
 
   </main>
 
- 
+
   <footer>
     <p>
-        © 2026 YasminEducação — Todos os direitos reservados.</p>
+      © 2026 YasminEducação — Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
