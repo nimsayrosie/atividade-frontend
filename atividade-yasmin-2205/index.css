@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #d1c0cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5ch;
+}
+
+
+header {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+
+main {
+  flex: 1;
+  background-color: #F1E9DA;
+  padding: 4rem 2rem 2rem;
+  width: 100%;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+main h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 1.85rem;
+  color: #1a1209;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.grade{
+  display: flex;
+  gap: 20px;
+
+}
+
+.card{
+  flex: 1;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color:  #a1376c;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 32px 24px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  line-height: 2;
+  width: 100%;
+}
+
+.title-yasmin{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 1.85rem;
+  color: #a1376c;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.mensagem-global{
+  font-weight: 900;
+  color: #e40a0a;
+  
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.carrinho-section {
+  margin-top: 3rem;
+  border-top: 2px solid #d6c9b8;
+  padding-top: 2rem;
+}
+
+.carrinho-vazio {
+  color: #999;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.lista-carrinho {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-carrinho {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.item-carrinho p {
+  font-weight: 700;
+  color: #1a1209;
+}
+
+.item-carrinho span {
+  font-weight: 900;
+  color: #a1376c;
+  white-space: nowrap;
+}
+
+.carrinho-total {
+  margin-top: 1.4rem;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1209;
+  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.carrinho-total span {
+  font-weight: 900;
+  color: #a1376c;
+}
+
+.linha-desconto {
+  color: #2a8a2a;
+  display: none; 
+}
+
+.linha-desconto span {
+  color: #2a8a2a;
+}
+
+.linha-final {
+  font-size: 1.2rem;
+  border-top: 1px solid #d6c9b8;
+  padding-top: 6px;
+  margin-top: 2px;
+}
+
+.desconto-area {
+  display: none; 
+  margin-top: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.desconto-area input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.desconto-area input:focus {
+  border-color: #a1376c;
+}
+
+.desconto-area button {
+  padding: 10px 20px;
+  background-color: #a1376c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.desconto-area button:hover {
+  background-color: #8a2d5c;
+}
+
+.msg-cupom {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.msg-cupom.sucesso {
+  color: #2a8a2a;
+}
+
+.msg-cupom.erro {
+  color: #e40a0a;
+}
