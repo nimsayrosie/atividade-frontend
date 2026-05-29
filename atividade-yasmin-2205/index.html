@@ -35,9 +35,6 @@
 
     <section class="secao-pesquisa">
       <input type="text" id="search-input" placeholder="Pesquisar cursos...">
-      <select id="category-filter-selector">
-        <option value="">Todas as Categorias</option>
-      </select>
     </section>
 
     <section class="secao-cursos">
@@ -45,7 +42,7 @@
 
       <div class="grade">
         <article class="card">
-          <div class="card-topo" ;">
+          <div class="card-topo">
 
           </div>
           <div class="card-corpo">
@@ -98,13 +95,18 @@
 
 
       <div class="desconto-area" id="desconto-area">
-        <input type="text" id="input-cupom" placeholder="Tem um cupom? Digite aqui..." />
-        <button onclick="aplicarDesconto()">Aplicar</button>
-        <p class="msg-cupom" id="msg-cupom"></p>
+        <fieldset>
+          <legend>Cupom</legend>
+          <input type="text" id="input-cupom" placeholder="Tem um cupom? Digite aqui..." />
+          <button onclick="aplicarDesconto()">Aplicar</button>
+          <p class="msg-cupom" id="msg-cupom"></p>
+        </fieldset>
       </div>
 
 
       <div class="carrinho-total" id="carrinho-total">
+        <button onclick="">Comprar</button>
+
         <p>Subtotal: <span id="subtotal-preco">R$ 0,00</span></p>
         <p class="linha-desconto" id="linha-desconto">
           Desconto: <span id="desconto-valor">- R$ 0,00</span>
@@ -118,8 +120,7 @@
 
 
   <footer>
-    <p>
-      © 2026 YasminEducação — Todos os direitos reservados.</p>
+    <p>© 2026 YasminEducação — Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>

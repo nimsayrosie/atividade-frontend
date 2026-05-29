@@ -10,7 +10,6 @@ var cuponsValidos = {
   "YASMIN60": 60,
 };
 
-
 function formatarMoeda(valor) {
   return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
@@ -104,3 +103,25 @@ function aplicarDesconto() {
 
   atualizarTotal();
 }
+
+function atualizarCursosVisiveis() {
+    const searchTerm = document.getElementById("search-input").value.toLowerCase();
+
+    document.querySelectorAll(".card").forEach((cardElement) => {
+        const courseName = cardElement.querySelector(".card-titulo").innerText;
+        const courseAuthor = cardElement.querySelector(".card-instrutor").innerText;
+
+        const matchesSearch = courseName.includes(searchTerm) || courseAuthor.includes(searchTerm);
+
+        if (matchesSearch) {
+            cardElement.style.display = "block";
+        } else {
+            cardElement.style.display = "none";
+        }
+    });
+}
+
+
+document.getElementById("search-input").addEventListener("input", () => {
+    atualizarCursosVisiveis();
+});
